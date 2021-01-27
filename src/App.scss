@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+.verification-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.nav-tabs {
+  width: 25%;
+  margin: 30px auto;
+}
+
+.breadcrumb {
+  background-color: white;
+
+  &-item {
+    & a {
+      color: #212529;
+    }
+
+    & .active {
+      color: #6c757d;
+      pointer-events: none;
+    }
+  }
+}
+
+.headerBtn {
+  font-size: 15px;
+}
+
+.chosen-container {
+  font-size: 1rem;
+
+  &-active.chosen-with-drop .chosen-single {
+    background: none;
+  }
+
+  &-single .chosen-single {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: .375rem .75rem;
+
+    & span {
+      display: inline;
+      margin-right: 0;
+    }
+
+    & div {
+      display: inline-block;
+      height: 18px;
+      position: static;
+    }
+  }
+}
+
+.table {
+  & tr:first-of-type {
+    & td:nth-of-type(2) {
+      width: 40%;
+    }
+  }
+}
+
+.note {
+  &__edit {
+    background-color: #dae0e5;
+    border-radius: .25rem;
+    color: #212529;
+    cursor: pointer;
+    transition: background-color .15s;
+
+    &:hover {
+      background-color: darken(#dae0e5, 5%);
+      color: #212529;
+      text-decoration: none;
+    }
+  }
+
+  &__remove {
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background-color .15s;
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.languages-wrapper {
+  & .active {
+    color: #6c757d;
+    pointer-events: none;
+    text-decoration: underline;
+  }
+
+  & a:first-child {
+    padding-right: 10px;
+  }
+}
